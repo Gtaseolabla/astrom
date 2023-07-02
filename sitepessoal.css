@@ -1,0 +1,197 @@
+/* global */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/* Imagem de plano de fundo para desktop */ body {
+  margin: 0;
+  padding: 0;
+  color: #7A7C80;
+  background-image: url(1217194.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Imagem de plano de fundo para dispositivos móveis */ 
+@media (max-width: 580px) { body { background-image: url(imagemcel.jpg); 
+  background-attachment: fixed;
+  background-size: cover;
+  
+} 
+
+
+}
+
+
+h2 {
+  color: #ffffff;
+  font-weight: 300;
+}
+
+a {
+  color: ##8098ff;
+  text-decoration: none;
+}
+
+/* section 1 */
+.section-1 {
+  padding-top: 5vh;
+  text-align: center;
+}
+
+.section-1 p {
+  font-size: 1.1rem;
+  padding-bottom: 10px;
+  margin: 0;
+  color: #ffffff;
+  font-style: italic;
+}
+
+.section-1 h2 {
+  font-size: 2.0rem;
+  margin-bottom: 20px;
+  font-style: oblique;
+  font-display:;
+}
+
+.section-1 a {
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+/* section 2 */
+.section-2 {
+  padding-top: 10vh;
+  width: 100%;
+}
+
+.section-2 h2 {
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+}
+
+.section-2 p {
+  font-size: 1.1rem;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+.section-2 a {
+  display: block;
+  padding: 5px;
+  font-size: 1.2rem;
+  padding-left: 0;
+  width: 100px;
+}
+
+/* animations / utilities */
+.section-2 a:hover {
+  font-size: 1.3rem;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.section-1 a:hover {
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.white:hover {
+  position: relative;
+  padding-left: 10px;
+}
+
+/* media queries */
+@media (max-width: 780px) {
+  .grid-1 {
+    grid-template-columns: 1fr;
+  }
+  .section-1 {
+    padding: 0;
+    padding-top: 5rem;
+  }
+  .section-2 {
+    padding: 0;
+    padding-left: 1.5rem;
+    padding-top: 2rem;
+  }
+}
+
+/* Logo */
+.logo {
+  display: block;
+  width: 200px; /* Defina a largura desejada para a imagem */
+  height: 200px; /* Defina a mesma altura que a largura para obter um formato circular */
+  margin: 0 auto; /* Centraliza horizontalmente a imagem */
+  border-radius: 50%; /* Aplica o formato circular */
+  overflow: hidden; /* Garante que a imagem esteja dentro do círculo */
+}
+
+/* Scroll Animation */
+@keyframes scrollAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section-1,
+.section-2 {
+  animation: scrollAnimation 1s ease-in-out;
+}
+
+
+/* Mobile Responsive */
+@media (max-width: 500px) {
+  .section-1 h2,
+  .section-2 h2 {
+    font-size: 1.2rem;
+  }
+
+  body {
+    background-position: top center;
+  }
+
+  .section-2 {
+    padding-top: 5vh;
+  }
+
+}
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #4852e4;
+  border: 1.2px #000000eb;
+  color: #000000eb;
+  text-align: center;
+  font-size: 1.8 rem;
+  padding: 10px;
+  transition: all 0.5s;
+  cursor: pointer;ter;
+  
+ 
+  }
+
+}
+
+/* Desktop layout */ @media (min-width: 768px) { /* Flexbox container para dividir a página em duas colunas */ body {
+ display: flex; 
+ flex-direction: row; 
+align-items: flex-start; } 
+
+/* Estilos para a primeira coluna (left) */ .grid-2 
+{ flex: 1; /* A primeira coluna ocupa 1 parte do flex container */ 
+padding: 20px; 
+background-color: #f1f1f1; }
+
+ } /* Estilos para a segunda coluna (right) */ .section-2 
+ { flex: 1; /* A segunda coluna ocupa 1 parte do flex container */
+  padding: 20px; 
+  background-color: #f1f1f1; }
